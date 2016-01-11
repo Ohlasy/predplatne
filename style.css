@@ -1,0 +1,15 @@
+.btn {
+    font-size: 100%;
+}
+
+fieldset {
+    margin-bottom: 1ex;
+}
+
+label {
+    display: block;
+}
+
+select, option, input[type="text"] {
+    width: 80%;
+}

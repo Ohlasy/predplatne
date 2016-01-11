@@ -1,38 +1,39 @@
-<!DOCTYPE html>
-<html lang="cs">
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Ohlasy | Předplatné</title>
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-    <link href="http://ohlasy.info/style/shared.css" rel="stylesheet">
-    <link rel="icon" type="image/png" href="http://predplatne.ohlasy.info/img/favicon.png">
-</head>
-<body>
-    <header class="navbar navbar-default">
-    <div class="container">
-        <h1><a href="http://ohlasy.info/">Ohlasy <small>předplatné</small></a></h1>
-    </div>
-    </header>
+---
+layout: main
+---
 
-    <div class="container">
+<div class="row">
+    <div class="col-md-8 col-sm-12">
+        <h2>Proč platit?</h2>
+        <p>Média na celém světě prochází dlouhodobou ekonomickou krizí. Příjmy z
+        inzerce v tištěných titulech klesají a příjmy z reklamy na webu nejsou
+        tak vysoké, aby je nahradily. Důsledky jsme pocítili i v našem regionu,
+        kde rokem 2014 přestaly po čtvrt století existence vycházet regionální
+        noviny Boskovicko.</p>
+        <p>Cest z této krize je málo, a podle našeho nejlepšího svědomí existuje
+        pouze jediná, která vede ke kvalitním médiím: Pokud chce být čtenář
+        zákazníkem a nikoliv prodávaným zbožím, musí být ochoten za novinařinu
+        platit.</p>
+        <p>Když jsme začátkem roku 2015 začali pracovat na Ohlasech, náš hlavní
+        cíl byl jasný: dělat regionální novinařinu, která bude jako zdroj
+        kvalitních, ověřených informací a konstruktivní kritiky zlepšovat
+        region, ve kterém žijeme. Po roce provozu můžete posoudit, nakolik se
+        nám to daří. Pokud chcete, abychom ve své práci pokračovali, předplaťte
+        si nás, prosím. Bez peněz od čtenářů se neobejdeme.</p>
+        <h2>O předplatném podrobně</h2>
     </div>
-
-    <footer class="text-muted">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-8">
-                    <ul class="list-unstyled">
-                        <li><em>Ohlasy, internetové noviny <span class="nobreak">pro Boskovice a okolí</span></em>
-                        <li>vydává spolek šílenců, <span class="nobreak">protože kdo jiný by dneska dělal noviny</span>
-                        <li><a href="mailto:ohlasy@ohlasy.info">ohlasy@ohlasy.info</a>, <a href="/inzerce.html">inzerujte u nás!</a>
-                        <li>+420 608 763 954
-                        <li><a href="https://www.facebook.com/ohlasy">Facebook</a>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </footer>
-</body>
-</html>
+    <div class="col-md-4 col-sm-12">
+        <h2>Platba online</h2>
+        {% include paypal-form.html %}
+        <h2>Platba převodem</h2>
+        <p>Číslo našeho účtu je 670100-2212735614/6210. Do zprávy pro příjemce
+        prosím napište svou poštovní a e‑mailovou adresu, ať na vás máme kontakt.
+        Příspěvek můžete posílat pravidelně měsíčně i na celý rok předem, částku
+        zvolte podle vlastního uvážení. (Aby mělo předplatné smysl, potřebujeme
+        aspoň 50 Kč měsíčně.)</p>
+        <h2>Osobní platba</h2>
+        <p>Pokud vám ani jeden z nabízených způsobů platby nevyhovuje,
+        ozvěte se nám prosím na <a href="mailto:ohlasy@ohlasy.info?subject=Předplatné">
+        ohlasy@ohlasy.info</a> nebo +420 608 763 954 a jistě se nějak domluvíme.</p>
+    </div>
+</div>
