@@ -44,28 +44,39 @@ layout: main
         důstojně odměnit externí autory nebo se rozvíjet. Úvodní rok své
         existence jsme dotovali, ale pokud mají Ohlasy nadále nabízet
         kvalitní a pestrý obsah, bez plateb od čtenářů se neobejdeme.</p>
-
-        <p><em>Kolik předplatné stojí?</em> Pokud má mít smysl, potřebujeme od
-        každého předplatitele aspoň 50 Kč měsíčně. Pokud si to můžete dovolit,
-        nabízíme také varianty 100 a 200 Kč měsíčně. A pokud nám chcete platit
-        jednou ročně bankovním převodem, můžete to zaokrouhlit na 500/1000/2000
-        Kč ročně.</p>
-
-        <p><em>Můžu platit kartou?</em> Ano! Z technických důvodů zatím nenabízíme
-        dostatečně jednoduchý formulář pro platbu kartou, ale když zvolíte online
-        platbu, můžete přes PayPal zaplatit i kartou. Rádi bychom tuto platbu
-        zjednodušili, snad se podaří časem.</p>
     </div>
     <div class="col-md-4 col-sm-12">
-        <h2>Platba online</h2>
-        {% include paypal-form.html %}
-        <h2>Platba převodem</h2>
-        <p>Číslo našeho účtu je 670100-2212735614/6210. Do zprávy pro příjemce
-        prosím napište svou poštovní a e‑mailovou adresu, ať na vás máme kontakt.
-        Příspěvek můžete posílat pravidelně měsíčně i na celý rok předem, částku
-        zvolte podle vlastního uvážení. (Aby mělo předplatné smysl, potřebujeme
-        aspoň 50 Kč měsíčně.)</p>
-        <h2>Osobní platba</h2>
+        <h2><small>Pravidelné měsíční předplatné</small></h2>
+        <p>Zvolená částka se vám bude strhávat jednou měsíčně, dokud předplatné nezrušíte.</p>
+
+        <form action="https://sites.fastspring.com/ohlasy/instant/subscription">
+            <fieldset>
+                <select name="tags">
+                    <option value="price=50">50 Kč měsíčně</option>
+                    <option value="price=100">100 Kč měsíčně</option>
+                    <option value="price=200">200 Kč měsíčně</option>
+                </select>
+            </fieldset>
+            <input type="submit" class="btn btn-primary" value="Koupit online">
+        </form>
+
+        <h2><small>Jednorázové roční předplatné</small></h2>
+        <p>Zaplatíte na celý rok předem a za rok se můžete rozhodnout, co dál.
+        Narozdíl od měsíčního předplatného je možno zaplatit též převodem na účet.</p>
+
+        <form action="https://sites.fastspring.com/ohlasy/instant/year">
+            <fieldset>
+                <select name="tags">
+                    <option value="price=500">500 Kč</option>
+                    <option value="price=1000">1000 Kč</option>
+                    <option value="price=2000">2000 Kč</option>
+                </select>
+            </fieldset>
+            <input type="submit" class="btn btn-primary" value="Koupit online">
+        </form>
+
+        <br>
+
         <p>Pokud vám ani jeden z nabízených způsobů platby nevyhovuje,
         ozvěte se nám prosím na <a href="mailto:ohlasy@ohlasy.info?subject=Předplatné">
         ohlasy@ohlasy.info</a> nebo +420 608 763 954 a jistě se nějak domluvíme.</p>
